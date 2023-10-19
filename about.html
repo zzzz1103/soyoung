@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SO-YOUNG/ABOUT</title>
+
+    <link rel="stylesheet" href="css/style_about.css">
+
+    <script src="js/plugin/jquery-3.3.1.min.js"></script>
+    <script src="js/plugin/jquery.simplyscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="js/plugin/scrolla.jquery.min.js"></script>
+    <script src="js/plugin/splitting.min.js"></script>
+    <script src="js/script_about.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <div class="innerHeader">
+                <h2 class="logo en">
+                    <a href="index.html">SO<br>YOUNG</a>
+                </h2>
+                <div class="menuOpen">
+                    <div class="btn">
+                        <span class="a"></span>
+                        <span class="b"></span>
+                    </div>
+                    <div class="menu">
+                        <ul class="en">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="works.html">WORKS</a></li>
+                            <li><a href="protfolio.html">PORTFOLIO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- fix right home title -->
+            <div class="right en">ABOUT</div>
+        </header>
+        <!-- visual -->
+        <section class="visual">
+            <div class="videoBox">
+                <video loop autoplay muted playsinline>
+                    <source src="img/index/about.mp4">
+                </video>
+            </div>
+            <div class="text">
+                <ul id="scroller">
+                    <li>Happiness is always next to me</li>
+                </ul>
+            </div>
+            <p class="scrollDown">SCROLL DOWN</p>
+        </section>
+        <!-- about -->
+        <section class="about">
+            <div class="inner">
+                <div class="imgBox">
+                    <img src="img/about/me.png" alt="">
+                </div>
+                <div class="aboutBox">
+                    <div class="text1">
+                        <h3 class="en">‘ SO-YOUNG ’</h3>
+                        <p>젊고 긍정적인 마인드를 가진 <br>UI/UX기획자 강소영입니다.</p>
+                        <p>기획은 사용자의 니즈를 잘 파악하는것을 시작으로 <br>꾸준히 소통하고 수정하며 만들어진다고 생각합니다.<span>사용자와 팀원들의 말을 귀 기울이고 소통하며 <br>좋은 기획을 만들도록 노력하겠습니다.</span></p>
+                        <p>언제나 젊고 긍정적인 마인드를 가지고 <br>제가 닿는 모든 곳에 좋은 영향을 미치는 <br>기획자가 되겠습니다.</p>
+                    </div>
+                    <div class="text2">
+                        <ul class="left">
+                            <li class="profile">
+                                <h3>profile</h3>
+                                <p>Name<span>강소영</span></p>
+                                <p>Birth<span>1996. 04. 02</span></p>
+                                <p>Phone<span>010-9575-1358</span></p>
+                                <p>Mail<span>o4ee_@naver.com</span></p>
+                                <p>Address<span>경기도 수원시 영통구 원천동</span></p>
+                            </li>
+                            <li class="career">
+                                <h3>career</h3>
+                                <p class="margin">2021. 02 ~ 2022. 03<span>제주3 <br>어린이급식관리지원센터</span></p>
+                                <p>2022. 06 ~ 2023. 12<span>수원나누리병원</span></p>
+                            </li>
+                        </ul>
+                        <ul class="right">
+                            <li class="education">
+                                <h3>education</h3>
+                                <p>2015. 03 ~ 2019. 08<span>제주대학교 식품영양학과</span></p>
+                                <p class="margin">2023. 04 ~ 2023. 10<span>강남이젠아카데미 NCS <br>(UI/UX Design & 프론트엔드)
+                                </span></p>
+                            </li>
+                            <li class="license">
+                                <h3>license</h3>
+                                <p>2023. 05<span>GTQ Photoshop 1급</span></p>
+                            </li>
+                            <li class="skill">
+                                <h3>skill</h3>
+                                <p><span>Figma</span><span>photoshop</span><span>Illustrator</span><br><span>Html</span><span>jQuery</span><span>javaScript</span><span>css</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- timeline -->
+        <section class="timeline">
+            <h2 class="en">timeline</h2>
+            <div class="con" data-splitting>
+                <ul>
+                    <li class="animate01" data-animate="motion">
+                        <div class="img animate01" data-animate="motion"><img src="img/about/time1.png" alt=""></div>
+                        <div class="textBox">
+                            <div class="lineBox">
+                                <span class="dot"></span>
+                            </div>
+                            <p class="title en">Birth</p>
+                            <p class="text">1996년 4월 제주에서<br>태어났습니다.</p>
+                        </div>
+                    </li>
+                    <li class="animate01" data-animate="motion">
+                        <div class="img"><img src="img/about/time2.png" alt=""></div>
+                        <div class="textBox">
+                            <div class="lineBox">
+                                <span class="line"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="title en">Student</p>
+                            <p class="text">똑부러지고 착실하게<br>학창시절을 보냈습니다.</p>
+                        </div>
+                    </li>
+                    <li class="animate01" data-animate="motion">
+                        <div class="img"><img src="img/about/time3.png" alt=""></div>
+                        <div class="textBox">
+                            <div class="lineBox">
+                                <span class="line"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="title en">Work</p>
+                            <p class="text">대학 졸업 후 전공을 살려<br>2년동안 영양사로 일을 했습니다.</p>
+                        </div>
+                    </li>
+                    <li class="animate01" data-animate="motion">
+                        <div class="img"><img src="img/about/time4.png" alt=""></div>
+                        <div class="textBox">
+                            <div class="lineBox">
+                                <span class="line"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="title en">A new start</p>
+                            <p class="text">영양사일을 하면서<br>제가 좋아하는 일이 무엇일까 고민하게 되었고 <br>UI/UX 디자인에 흥미를 느끼게 되었습니다.</p>
+                        </div>
+                    </li>
+                    <li class="animate01" data-animate="motion">
+                        <div class="img"><img src="img/about/time5.png" alt=""></div>
+                        <div class="textBox">
+                            <div class="lineBox">
+                                <span class="line"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="title en">License</p>
+                            <p class="text">독학으로 포토샵 1급 자격증을<br>취득하였습니다</p>
+                        </div>
+                    </li>
+                    <li class="animate01" data-animate="motion">
+                        <div class="img"><img src="img/about/time6.png" alt=""></div>
+                        <div class="textBox">
+                            <div class="lineBox">
+                                <span class="line"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <p class="title en">Study</p>
+                            <p class="text">제대로 UI/UX Design을 공부하기 위해서<br>NCS과정(UI/UX Design_프론트엔드)을 신청하고 <br>6개월 동안 성실하게 교육과정을 마무리했습니다.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="now animate01" data-animate="motion">
+                    <div class="lineBox">
+                        <span class="dot"></span>
+                        <span class="line"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <p class="title en">Now</p>
+                    <p class="text">도전과 경험을 하면서 항상 발전하는 사람이 될 수 있도록 노력하고 있습니다.</p>
+                </div>
+            </div>
+        </section>
+        <!-- hobby -->
+        <section class="hobby">
+            <div class="inner">
+                <h2 class="en">hobby</h2>
+                <ul class="leftBox">
+                    <li class="film">
+                        <div class="textBox">
+                            <p class="title en">film camera</p>
+                            <p class="text">필름카메라을 사용하여 <br>풍경사진 찍는 것을 좋아합니다.</p>
+                        </div>
+                        <div class="img f1"><img src="img/about/hobby1-1.png" alt=""></div>
+                        <div class="img f2"><img src="img/about/hobby1-2.png" alt=""></div>
+                        <div class="img f3"><img src="img/about/hobby1-3.png" alt=""></div>
+                        <div class="img f4"><img src="img/about/hobby1-4.png" alt=""></div>
+                        <div class="img f5"><img src="img/about/hobby1-5.png" alt=""></div>
+                    </li>
+                    <li class="pottery">
+                        <div class="textBox">
+                            <p class="title en">pottery</p>
+                            <p class="text">도자기 공예를 배우고 있습니다.</p>
+                        </div>
+                        <div class="img p1"><img src="img/about/hobby2-1.png" alt=""></div>
+                        <div class="img p2"><img src="img/about/hobby2-2.png" alt=""></div>
+                        <div class="img p3"><img src="img/about/hobby2-3.png" alt=""></div>
+                        <div class="img p4"><img src="img/about/hobby2-4.png" alt=""></div>
+                        <div class="img p5"><img src="img/about/hobby2-5.png" alt=""></div>
+                    </li>
+                    <li class="hiking">
+                        <div class="textBox">
+                            <p class="title en">hiking</p>
+                            <p class="text">생각이 많을 때나 마음이 싱숭생숭할 때 <br>등산을 하면서 생각과 마음을 정리합니다.</p>
+                        </div>
+                        <div class="img h1"><img src="img/about/hobby3-1.png" alt=""></div>
+                        <div class="img h2"><img src="img/about/hobby3-2.png" alt=""></div>
+                        <div class="img h3"><img src="img/about/hobby3-3.png" alt=""></div>
+                        <div class="img h4"><img src="img/about/hobby3-4.png" alt=""></div>
+                        <div class="img h5"><img src="img/about/hobby3-5.png" alt=""></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p class="contact">CONTACT</p>
+            <div class="textAni">
+                <ul id="scroller02">
+                    <li class="en">o4ee_@naver.com</li>
+                    <li class="en">010.9575.1358</li>
+                    <li class="en">o4ee_@naver.com</li>
+                    <li class="en">010.9575.1358</li>
+                    <li class="en">o4ee_@naver.com</li>
+                    <li class="en">010.9575.1358</li>
+                    <li class="en">o4ee_@naver.com</li>
+                    <li class="en">010.9575.1358</li>
+                    <li class="en">o4ee_@naver.com</li>
+                    <li class="en">010.9575.1358</li>
+                    <li class="en">o4ee_@naver.com</li>
+                    <li class="en">010.9575.1358</li>
+                    <li class="en">o4ee_@naver.com</li>
+                    <li class="en">010.9575.1358</li>
+                    <li class="en">o4ee_@naver.com</li>
+                    <li class="en">010.9575.1358</li>
+                    <li class="en">o4ee_@naver.com</li>
+                    <li class="en">010.9575.1358</li>
+                    <li class="en">o4ee_@naver.com</li>
+                    <li class="en">010.9575.1358</li>
+                </ul>
+            </div>
+            <p class="text en">UI/UX DESIGNER <span>KANG SOYOUNG</span></p>
+            <ul class="bottomText">
+                <li>E-MAIL<span>o4ee_@naver.com</span></li>
+                <li><a href="">TOP</a></li>
+                <li>PHONE<span>010-9575-1358</span></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

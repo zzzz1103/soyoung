@@ -1,0 +1,178 @@
+@charset "utf_8";
+
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Noto+Sans+KR&display=swap');
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../../font/Pretendard-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: 'Pretendard';
+    src: url(../../font/Pretendard-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: 'Pretendard';
+    src: url(../../font/Pretendard-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+   }
+   /* 영어폰트 */
+   @font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(../../font/PlayfairDisplay-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(../../font/PlayfairDisplay-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(../../font/PlayfairDisplay-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+   }
+
+
+
+/* reset */
+* {margin: 0;padding: 0; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/* layout */
+body {font-family: 'Pretendard', sans-serif; font-weight: 400; font-size: 20px; line-height: 1.2;}
+.wrap {width: 100%; overflow: hidden; position: relative;}
+.en {font-family: 'PlayfairDisplay', serif; font-weight: 600;}
+
+/* header */
+header {width: 100%; height: 100px; position: fixed; z-index: 100; color: #fff;}
+header .innerHeader {width: 94%; margin: 45px auto 0; display: flex; justify-content: space-between;}
+header .innerHeader h2 {font-size: 22px; line-height: 0.9; font-weight: 600;}
+header .innerHeader h2 a{display: block;}
+
+.visual {width: 100%; height: 100vh;}
+.visual .inner {height: 97vh; width: 100%; background: url(../img/deabang/bg.png) no-repeat center/cover; color: #fff; position: relative;}
+.visual .inner .con {width: 70%; margin: 0 auto; display: flex; padding-top: 300px; justify-content: space-between;}
+.visual .inner .con h2 {font-size: 5vw;}
+.visual .inner .con .textBox {margin-top: 180px;}
+.visual .inner .con .textBox .text {font-size: 24px; margin-bottom: 40px;} 
+.visual .inner .con .textBox ul li {display: flex; position: relative; margin-bottom: 10px;}
+.visual .inner .con .textBox ul li .title {font-size: 22px; font-weight: 500;}
+.visual .inner .con .textBox ul li .subtext {font-size: 20px; position: absolute; top: 50%; left: 20%; transform: translateY(-50%);}
+.visual .inner .con .textBox ul li .btnBox {position: absolute; top:0%; left: 20%;  display: flex;}
+.visual .inner .con .textBox ul li .btnBox .btn {margin-right: 15px;}
+.visual .inner .con .textBox ul li .btnBox .btn a{display: block; border: 1px solid #fff; border-radius: 50px; padding: 5px 15px; font-size: 18px; transition: all 0.3s;}
+.visual .inner .con .textBox ul li .btnBox .btn a:hover, .visual .inner .con .textBox ul li .btnBox .btn a:focus {background: #fff; color: #000; transition: all 0.3s;}
+.visual .inner .scroll {position: absolute; left: 50%; bottom: 2%; transform: translate(-50%); font-size: 18px; font-weight: 300;}
+
+/* visual.motion */
+.visual .title.motion h2 p{animation-name: slideUp; animation-duration: .8s;}
+@keyframes slideUp {
+    0% {transform: translateY(100px); opacity: 0;}
+    20% {transform: translateY(100px); opacity: 0;}
+}
+.visual .inner .con .textBox .text {animation-name: slideUp02; animation-duration: 1.2s;}
+@keyframes slideUp02 {
+    0% {transform: translateY(100px); opacity: 0;}
+    40% {transform: translateY(100px); opacity: 0;}
+}
+.visual .inner .con .textBox ul li.motion {animation-name: slideUp02; animation-duration: 1.4s;}
+.visual .inner .con .textBox ul li:nth-child(2).motion {animation-name: slideUp02; animation-duration: 1.6s;}
+.visual .inner .con .textBox ul li:nth-child(3).motion {animation-name: slideUp02; animation-duration: 1.8s;}
+
+
+/* system */
+.system {width: 100%; height: 100vh;}
+.system .inner {width: 55%; margin: 0 auto; padding: 100px 0 100px;}
+.system h2 {font-size: 4.5vw; color: #e55139; text-align: center; margin-bottom: 80px;}
+.system .inner > ul {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.system ul li.point {width: 100%; margin-bottom: 55px;}
+.system ul li .title {font-size: 25px; font-weight: 700; margin-bottom: 10px;}
+.system ul li .textBox {font-size: 22px;}
+.system ul li.point  .textBox {display: flex;}
+.system ul li.point  .textBox p {margin-right: 15px;}
+.system ul li.colorBox .textBox .text {margin-bottom: 20px; font-weight: 500;}
+.system ul li.colorBox .textBox .color {display: flex;}
+.system ul li.colorBox .textBox .color li {width: 130px; height: 130px; border-radius: 20px; background: #000; margin-right: 30px; margin-bottom: 30px; box-shadow: 0 0 10px #00000029; position: relative;}
+.system ul li.colorBox .textBox .color li p {position: absolute; bottom: 5px; font-size: 18px; text-transform: uppercase; left: 50%; transform: translateX(-50%);}
+.system ul li.colorBox .textBox .color li.color01 {background: #fff;}
+.system ul li.colorBox .textBox .color li.color02 {background: #EEBB48;}
+.system ul li.colorBox .textBox .color li.color03 {background: #5E6167;}
+.system ul li.colorBox .textBox .color li.color04 {background: #1C293B;}
+.system ul li.colorBox .textBox .color li.color05 {background: #C2A782;}
+.system ul li.font .textBox .text {margin-bottom: 30px;}
+.system ul li.font .textBox .subBox {display: flex; font-family: 'Noto Sans KR', sans-serif; }
+.system ul li.font .textBox ul {margin-bottom: 20px;}
+.system ul li.font .textBox ul.bold {font-weight: 700; margin-left: 40px;}
+.system ul li.font .textBox ul li {margin-bottom: 10px;}
+.system ul li.font .textBox ul li:nth-child(1) {font-size: 32px;}
+.system ul li.font .textBox ul li:nth-child(2) {font-size: 24px;}
+.system ul li.font .textBox ul li:nth-child(3) {font-size: 18px;}
+
+/* system .motion */
+.system ul li.point.motion {animation-name: slideUp02; animation-duration: 0.6s;}
+.system ul li.colorBox.motion {animation-name: slideUp02; animation-duration: 1s;}
+.system ul li.font.motion {animation-name: slideUp02; animation-duration: 1.4s;}
+
+
+/* view */
+.view {width: 100%; background: #000; color: #fff;}
+.view .inner {width: 70%; height: 100%; padding: 180px 0 180px; margin: 0 auto;}
+.view .inner .top {width: 80%; margin: 0 auto 180px; border-radius: 20px; overflow: hidden;}
+.view .inner .top video {width: 100%;}
+.view .inner .full {width: 100%;}
+.view .inner .full .img {width: 100%; border-radius: 20px; overflow: hidden;}
+.view .inner .full .img img {width: 100%;}
+
+/* view .motion */
+.view .inner .full .img.motion {animation-name: slideUp; animation-duration: .8s;}
+
+
+
+
+/* responsive */
+/* pc 1650~1250 */
+@media screen and (max-width:1650px) {
+    .visual .inner .con {width: 80%;}
+    .visual .inner .con h2 {font-size: 5.5vw;}
+    .visual .inner .con .textBox .text {font-size: 20px;}
+    .system h2 {font-size: 5vw;}
+    .system .inner {width: 70%;}
+}
+
+/* 1249~970 */
+@media screen and (max-width:1249px) {
+
+}
+
+/* 969px~831px : 모바일 */
+@media screen and (max-width:969px) {
+
+
+}
+
+/* 830px~651px : 모바일 */
+@media screen and (max-width:830px) {
+
+}
+
+/* 652px ~ : 모바일 */
+@media screen and (max-width:652px) {
+
+}
